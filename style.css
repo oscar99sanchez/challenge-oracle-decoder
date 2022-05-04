@@ -1,0 +1,175 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.contenedor{
+    width: 95vw;
+    height: 95vh;
+    margin: 2.5vh auto;
+
+    max-width: 1440px;
+    max-height: 1024px;
+    min-height: 500px;
+    min-width: 1000px;
+}
+
+.section0 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 75%;
+    height: 100%;
+    max-width: 1000px;
+
+    float: left;
+    box-sizing: border-box;
+    border: solid black;
+}
+
+.bloqueLogo {
+    width: 100%;
+}
+
+.textoEncriptar{
+    width: 68%;
+    height: 63%;
+    resize: none;
+    
+    background: none;
+    border: solid black;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+
+}
+
+.textoEncriptar::placeholder{
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.bloqueBotones{
+    /* margin-top: 380px; */ 
+    display: flex;
+    justify-content: center;   
+    width: 68%;
+    height: 6.54%;
+    justify-content: space-between;
+}
+
+.parrafo {
+    display: flex;
+    width: 68%;
+}
+
+.boton{
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+
+    background: #0A3871;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+#botonBlanco{
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+}
+
+.section1 {
+    width: 25%;
+    height: 100%;
+    max-height: 1024px;
+    max-width: 400px;
+    box-sizing: border-box;
+    float: left;
+    
+    background: #FFFFFF;
+    border-radius: 32px;
+    text-align: center;
+
+}
+
+.muñeco{
+    width: 87%;
+    height: auto;
+    margin-top: 150px;
+    padding-left: 0;
+}
+
+.texto{
+    width: 87%;
+    margin: 1em auto;
+    padding-bottom: 50px;
+}
+
+.section1 h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #343A40;
+}
+
+.section1 p{
+    width: 87%;
+    margin: 1em auto;
+}
+
+
+footer{
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    height: 100px;
+    background-color: #D8DFE8; 
+    
+}
+
+@media (max-width: 779px) {
+
+    .contenedor{
+        margin: 0vh 2vw;
+        width: 778;
+        background: gray;
+    }
+
+    .section0 {
+        width: 100vw;
+       
+    }
+    
+    .section1 {
+        max-width: 778px;
+        min-height: 100px;
+        width: 778px;
+        height: 133px;
+        border-radius: 32px;
+
+    }
+
+    .muñeco {
+        display: none;
+    }
+}
