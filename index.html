@@ -18,7 +18,7 @@
                     <img src="Imagenes/Vector.png">
                 </div>
 
-                <textarea class="textoEncriptar" placeholder="Ingrese texto aqui"></textarea>
+                <textarea type="text" class="textoEncriptar" placeholder="Ingrese texto aqui" id="d" oninput="this.value = this.value.replace(/[^a-z]/,'')"></textarea>
                 
                 <div class="parrafo">
                     <img src="Imagenes/Vector (1).png">
@@ -26,14 +26,17 @@
                 </div>
                 
                 <div class="bloqueBotones">
-                    <input type="button" value="Encriptar!" class="boton" onclick="disparar()">
-                    <input type="button" value="Desencriptar!" class="boton" id="botonBlanco" onclick="disparar()">
+                    <input type="button" value="Encriptar!" class="boton" onclick="disparar()" >
+                    <input type="button" value="Desencriptar!" class="boton" id="botonBlanco" onclick="disparar1()">
                 </div>
      
         </section>
 
-        <section class="section1" id="a">
-            <div>
+        <section class="section1" >
+            <div class="bloqueEncriptado" id="b">
+                <textarea type="text" class="textoEncriptado" placeholder="Ingrese texto aqui" id="c"></textarea>
+            </div>
+            <div id="a">
                 <img class="muñeco" src="Imagenes/Muñeco.png" alt="" >
                 <div class="texto">
                     <h1>Ningún mensaje fue encontrado</h1>
@@ -44,10 +47,9 @@
 
         </section>
 
+
+
     </div>
-    <footer>
-        
-    </footer>
     
 </body>
 </html>
