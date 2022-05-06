@@ -86,6 +86,12 @@ body {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+    transition: 1s all;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 #botonBlanco{
@@ -102,8 +108,7 @@ body {
     max-width: 400px;
     box-sizing: border-box;
     float: left;
-    
-    background: #740909;
+    background: #FFFFFF;
     border-radius: 32px;
     text-align: center;
 
@@ -111,6 +116,46 @@ body {
 
 .bloqueEncriptado {
     display: none;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.textoEncriptado{
+    width: 80%;
+    height: 80%;
+    resize: none;
+    margin-top: 20px;
+    
+    background: none;
+    border: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.botonCopiar  {
+    width: 80%;
+    height: 7%;
+    box-sizing: border-box;
+
+    background: #0A3871;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    transition: 1s all;
+
+}
+
+.botonCopiar:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .muñeco{
@@ -144,25 +189,56 @@ body {
     .contenedor{
         width: 100vw;
         min-width: 0px;
-        background: gray;
+        display: flex;
+        height: 130vh;
+        flex-direction: column;
     }
 
     .section0 {
         width: 100vw;
        
     }
+
+    .textoEncriptar {
+        width: 90%;
+    }
     
+    .bloqueBotones {
+        width: 90%;
+    }
+
     .section1 {
         max-width: 778px;
-        min-height: 100px;
-        width: 778px;
-        height: 133px;
+        width: 100vw;
+        height: auto;
         border-radius: 32px;
+        margin-top: 5vh;
+        margin-bottom: 50px;
+    }
 
+    .bloqueEncriptado{
+        height: auto;
+    }
+
+    .parrafo {
+        display: flex;
+        width: 90%;
+    }   
+
+    .textoEncriptado {
+        width: 90%;
+        height: 120px;  
+    }
+    
+    .botonCopiar{
+        width: 75%;
+        height: 40px;
+        margin-bottom: 10px;
     }
 
     .muñeco {
         display: none;
     }
+
 
 }

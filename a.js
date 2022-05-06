@@ -15,15 +15,19 @@ function btnDesencriptar(){
 
 function disparar() {
     document.getElementById("a").style.display="none";
-    document.getElementById("b").style.display="block";
+    document.getElementById("b").style.display="flex";
     btnEncriptar()
 
 }
 
-function disparar1  () {
+function disparar1() {
     document.getElementById("a").style.display="none";
-    document.getElementById("b").style.display="block";
+    document.getElementById("b").style.display="flex";
     btnDesencriptar()
+
+}
+
+function copiar(){
 
 }
 
@@ -52,5 +56,12 @@ function desencritar(texto){
 
 }
 
-// funcion para resgrigir 
+// funcion para copiar
+
+function copyToClipboard(elemento) {
+    let aux = document.getElementById("c")
+    aux.select();
+    document.execCommand("copy");
+
+  }
 
