@@ -17,6 +17,7 @@ function disparar() {
     document.getElementById("a").style.display="none";
     document.getElementById("b").style.display="flex";
     btnEncriptar()
+    limpiaCampo()
 
 }
 
@@ -24,13 +25,9 @@ function disparar1() {
     document.getElementById("a").style.display="none";
     document.getElementById("b").style.display="flex";
     btnDesencriptar()
+    limpiaCampo()
 
 }
-
-function copiar(){
-
-}
-
 
 function encritar(texto){
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
@@ -65,3 +62,9 @@ function copyToClipboard(elemento) {
 
   }
 
+// funcion para limpiar el text area
+
+function limpiaCampo() {
+    document.getElementById("d").value = "";
+    
+}

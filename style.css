@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background: #F3F5FC;
+    background: #d8dce7;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -31,7 +31,6 @@ body {
 
     float: left;
     box-sizing: border-box;
-    border: solid black;
 }
 
 .bloqueLogo {
@@ -44,7 +43,7 @@ body {
     resize: none;
     
     background: none;
-    border: solid black;
+    border: none;
 
     font-family: 'Inter';
     font-style: normal;
@@ -52,6 +51,10 @@ body {
     line-height: 150%;
     color: #0A3871;
 
+}
+
+.textoEncriptar:focus{
+    outline:none;
 }
 
 .textoEncriptar::placeholder{
@@ -67,6 +70,7 @@ body {
     width: 68%;
     height: 6.54%;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .parrafo {
@@ -111,6 +115,7 @@ body {
     background: #FFFFFF;
     border-radius: 32px;
     text-align: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 
 }
 
@@ -139,10 +144,15 @@ body {
     color: #0A3871;
 }
 
+.textoEncriptado {
+    outline:none;
+}
+
 .botonCopiar  {
     width: 80%;
     height: 7%;
     box-sizing: border-box;
+    margin-bottom: 20px;
 
     background: #0A3871;
     border-radius: 15px;
